@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5dfecdb.chunk.css",
-    "main.js": "/static/js/main.93d245d9.chunk.js",
-    "main.js.map": "/static/js/main.93d245d9.chunk.js.map",
+    "main.css": "/static/css/main.fd2da3e5.chunk.css",
+    "main.js": "/static/js/main.5d8e6fb7.chunk.js",
+    "main.js.map": "/static/js/main.5d8e6fb7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.900dd88b.js",
     "runtime-main.js.map": "/static/js/runtime-main.900dd88b.js.map",
-    "static/js/2.275c89e4.chunk.js": "/static/js/2.275c89e4.chunk.js",
-    "static/js/2.275c89e4.chunk.js.map": "/static/js/2.275c89e4.chunk.js.map",
+    "static/js/2.d04041ad.chunk.js": "/static/js/2.d04041ad.chunk.js",
+    "static/js/2.d04041ad.chunk.js.map": "/static/js/2.d04041ad.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a5dfecdb.chunk.css.map": "/static/css/main.a5dfecdb.chunk.css.map",
-    "static/js/2.275c89e4.chunk.js.LICENSE.txt": "/static/js/2.275c89e4.chunk.js.LICENSE.txt",
+    "static/css/main.fd2da3e5.chunk.css.map": "/static/css/main.fd2da3e5.chunk.css.map",
+    "static/js/2.d04041ad.chunk.js.LICENSE.txt": "/static/js/2.d04041ad.chunk.js.LICENSE.txt",
     "static/media/belief_meaning.b18619e3.png": "/static/media/belief_meaning.b18619e3.png",
     "static/media/blue_fish.f743789d.png": "/static/media/blue_fish.f743789d.png",
     "static/media/blue_fish_cooked.448e26e6.png": "/static/media/blue_fish_cooked.448e26e6.png",
@@ -21,7 +21,7 @@
     "static/media/logo.9d99d52f.png": "/static/media/logo.9d99d52f.png",
     "static/media/new_scale_no_hand.d327fafd.png": "/static/media/new_scale_no_hand.d327fafd.png",
     "static/media/new_structure_selection.3f20c7a2.png": "/static/media/new_structure_selection.3f20c7a2.png",
-    "static/media/newstructure_final.75cf1370.png": "/static/media/newstructure_final.75cf1370.png",
+    "static/media/newstructure_final.5b479035.png": "/static/media/newstructure_final.5b479035.png",
     "static/media/planet_visit.6e294efe.png": "/static/media/planet_visit.6e294efe.png",
     "static/media/planets_with_fish.90b6e8bb.png": "/static/media/planets_with_fish.90b6e8bb.png",
     "static/media/red_fish.b2907e63.png": "/static/media/red_fish.b2907e63.png",
@@ -39,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.900dd88b.js",
-    "static/js/2.275c89e4.chunk.js",
-    "static/css/main.a5dfecdb.chunk.css",
-    "static/js/main.93d245d9.chunk.js"
+    "static/js/2.d04041ad.chunk.js",
+    "static/css/main.fd2da3e5.chunk.css",
+    "static/js/main.5d8e6fb7.chunk.js"
   ]
 }
