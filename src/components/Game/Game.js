@@ -29,15 +29,7 @@ const Game = () => {
     const training = useSelector(state => state.training);
     const socialTraining =  useSelector(state => state.socialTraining);
     const socialTrainingStructure =  useSelector(state => state.socialTrainingStructure);
-    // console.log(socialTraining);
-    // console.log(training);
-    // console.log(socialTrainingStructure)
-    // console.log('insideGame')
-    // console.log('state');
-    // console.log(useSelector(state => state));
-   
-    
-   
+       
     useEffect(() => {
         const timeOut = setTimeout (() => {
             if (remainingTime > 0) {
