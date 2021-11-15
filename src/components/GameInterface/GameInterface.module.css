@@ -1,0 +1,72 @@
+
+.GameInterface {
+    display: grid;
+    grid-template-columns: 1fr 70rem 1fr;
+    grid-template-areas: ". text .";
+    margin-bottom: .5rem;
+}
+
+.GameForm {
+    background-color: white;
+    border-radius: .8rem;
+    text-align: justify;
+    grid-area: text;
+    padding: 2rem;
+    margin-bottom: .5rem;
+    height: 43rem; 
+    /* 43 for unknown structure */
+     /* 50 for known structure */
+    /* border: 8px solid #666;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px #888;
+     */
+}
+
+.GameContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 1rem;  
+
+    /* border: 8px solid #666;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px #888; */
+}
+
+.GameContainerStructure {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 1rem; 
+    position: relative;
+    height: 6rem;
+    margin-left: 37rem;
+    margin-right: 1rem;
+    margin-top: -4rem;
+    margin-bottom: 5rem;
+    border: 0px solid #666;
+    border-radius: 30px;
+    /* box-shadow: 2px 2px 4px #888; */
+}
+
+.item {
+    background: #ce8888;
+    width: 100px;
+    height: 20px;
+    }
+
+.item2 {
+    background:green;
+    width: 50px;
+    height: 20px;
+    }
+
+.ParagraphContainer {
+    background-color:'grey';
+    border-radius: .3rem;
+    padding: 0 1rem;
+    margin-top: .5rem;
+    transition: all .2s;
+    margin-bottom: .5rem;
+
+   
+
+}

@@ -1,0 +1,14 @@
+.StructureFrame {
+    background-color: grey;
+    position: relative;
+    width: 25rem;
+    margin-bottom: .5rem;
+    margin-left: 12rem;
+    height: 18rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+}
+
+

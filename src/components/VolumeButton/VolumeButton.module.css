@@ -1,0 +1,9 @@
+.VolumeButton {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.VolumeButton:hover {
+  background-color: #006400;
+}

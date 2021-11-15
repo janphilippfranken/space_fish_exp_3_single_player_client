@@ -1,0 +1,14 @@
+.StructureButton {
+  cursor: pointer;
+  opacity: 0.7;
+  background-color: lightgray;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+}
+
+.StructureButton:hover {
+  opacity: 1.0;
+  font-size: 20px;
+}

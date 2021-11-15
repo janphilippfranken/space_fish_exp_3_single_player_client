@@ -1,0 +1,31 @@
+@import '../../constants.scss';
+
+.InsTask {
+    display: grid;
+    grid-template-columns: 1fr 50rem 1fr;
+    grid-template-areas: ". text .";
+    margin-bottom:  5rem;
+}
+
+.InsReminder {
+    text-align: justify;
+    grid-area: text;
+    padding: 1rem;
+    background-color: white;
+}
+
+.InnerContainer {
+    text-align: justify;
+    grid-area: text;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 0.5rem;
+
+    & img {
+        width: 70%;
+        margin-bottom: 1rem;
+        margin-left: 15%;
+        margin-top: -2rem;
+
+    }
+}

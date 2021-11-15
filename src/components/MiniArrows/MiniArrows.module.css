@@ -1,0 +1,47 @@
+.MiniArrows {
+    position: absolute;
+    border-bottom: 60px solid green;
+    border-right: 65px solid white;
+    border-top: 0.75rem solid transparent;
+    border-right: 1.5rem solid green;
+    border-bottom: 0.75rem solid transparent;   
+}
+
+.Right {
+    position: absolute;
+    transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+.Left {
+    position: absolute;
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.Down1 {
+    position: absolute;
+    transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.Down2 {
+    position: absolute;
+    transform: rotate(135deg);
+    transform: rotate(-135deg);
+}
+
+.Up1 {
+    position: absolute;
+    transform: rotate(45deg);
+    transform: rotate(135deg);
+}
+
+.Up2 {
+    position: absolute;
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+

@@ -1,0 +1,13 @@
+.RegisterFrame {
+    border-radius: 12px;
+    position: relative;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 30px;
+    width: 500px;
+    align-items: center;
+  }
+  

@@ -1,0 +1,795 @@
+.Agent {
+    background-color: grey;
+    width: 7.5rem;
+	height: 5rem;
+	text-align: center;
+	line-height: 100px;
+    margin: 60px auto;
+	background-color: #fff;
+	border: 8px solid #666;
+	border-radius: 30px;
+    box-shadow: 2px 2px 4px #888;
+    /* overflow: hidden; */
+    
+}
+
+/* agent objects */
+.A {
+    position: absolute;
+    left:67.5%;
+    top:50%; 
+    background-color: lightgray;
+    font: 20px Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.B {
+    position:absolute;
+    left:56%;
+    top:9%; 
+    background-color: lightgray;
+    font: 20px Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.B_2 {
+    position:absolute;
+    left:5%;
+    top:9%; 
+    background-color: lightgray;
+    font: 15px Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mini {
+    position:absolute;
+    left:5%;
+    top:9%; 
+    width: 4rem;
+	height: 4rem;
+    background-color: lightgray;
+    font: 10px Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none!important;
+    background: transparent;
+	box-shadow: 0px 0px 0px #888;
+}
+
+
+.B_22 {
+    position:absolute;
+    left:5%;
+    top:9%; 
+    background-color: transparent;
+    font: 15px Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.C {
+    position: absolute;
+    left:79%;
+    top:9%; 
+    background-color: lightgray;
+    font: 20px Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.C_2 {
+    position: absolute;
+    left:50%;
+    top:9%; 
+    background-color: lightgray;
+    font: 15px Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.C_22 {
+    position: absolute;
+    left:50%;
+    top:9%; 
+    background: transparent;
+    font: 15px Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* agent name tags */
+.A_name {
+    position: absolute;
+    left:67.5%;
+    top:44%; 
+    background-color: transparent;
+    font: 30px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+	box-shadow: 0px 0px 0px #888;
+
+}
+
+.B_name {
+    position: absolute;
+    left:56%;
+    top:3%; 
+    background-color: transparent;
+    font: 30px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+	box-shadow: 0px 0px 0px #888;
+
+}
+
+.B_2name {
+    position: absolute;
+    left:5%;
+    top:2%; 
+    background-color: transparent;
+    font: 30px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+	box-shadow: 0px 0px 0px #888;
+
+}
+
+.C_name {
+    position: absolute;
+    left:79%;
+    top:3%; 
+    background-color: transparent;
+    font: 30px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+	box-shadow: 0px 0px 0px #888;
+
+}
+
+.C_2name {
+    position: absolute;
+    left:50%;
+    top:2%; 
+    background-color: transparent;
+    font: 30px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+	box-shadow: 0px 0px 0px #888;
+
+}
+
+/* frame above agents for instructions etc. */
+.instr_frame {
+    position:absolute;
+    left:15%;
+    top:-9%; 
+    width: 350px;
+    height: 20px;
+    font: 30px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+    background: transparent;
+	box-shadow: 0px 0px 0px #888;
+}
+
+
+/* frame above agents for instructions etc. */
+.instr_frame_bonus {
+    position:absolute;
+    left:15%;
+    top:-9%; 
+    width: 350px;
+    height: 20px;
+    font: 11px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+    background: transparent;
+	box-shadow: 0px 0px 0px #888;
+}
+
+.instr_frame_2 {
+    position:absolute;
+    left:15%;
+    top:-2%; 
+    width: 350px;
+    height: 20px;
+    font: 20px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+    background: transparent;
+	box-shadow: 0px 0px 0px #888;
+}
+
+.instr_frame_time {
+    position:absolute;
+    left:15%;
+    top:-12.5%; 
+    width: 350px;
+    height: 20px;
+    font: 15px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+    background: transparent;
+	box-shadow: 0px 0px 0px #888;
+}
+
+.instr_frame_time_warning {
+    position:absolute;
+    left:15%;
+    top:-12.5%; 
+    width: 350px;
+    height: 20px;
+    font: 18px Arial, sans-serif;
+    font-weight: bold;
+    color: red;
+    border-style: none!important;
+    background: transparent;
+	box-shadow: 0px 0px 0px #888;
+}
+
+.ConnectionDownInst {
+    position: absolute;
+    transform: rotateY(0deg) rotate(-20deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 1.5rem solid transparent;
+    border-right: 2.5rem solid green;
+    border-bottom: 1.5rem solid transparent;
+    box-shadow: 0px 0px 0px green; 
+    transform-origin: center center;
+}
+
+
+.ConnectionDown1 {
+    position: absolute;
+    transform: rotateY(0deg) rotate(-45deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 1.5rem solid transparent;
+    border-right: 2.5rem solid green;
+    border-bottom: 1.5rem solid transparent;
+    box-shadow: 0px 0px 0px green; 
+    transform-origin: center center;
+
+}
+
+.ConnectionDown1Mini {
+    position: absolute;
+    transform: rotateY(0deg) rotate(-45deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: .75rem solid transparent;
+    border-right: 1.5rem solid green;
+    border-bottom: 0.75rem solid transparent;
+    box-shadow: 0px 0px 0px green; 
+    transform-origin: center center;
+
+}
+
+
+.ConnectionUp1 {
+    position: absolute;
+    transform: rotateY(0deg) rotate(135deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 1.5rem solid transparent;
+    border-right: 2.5rem solid green;
+    border-bottom: 1.5rem solid transparent;
+    box-shadow: 0px 0px 0px #888; 
+
+}
+
+
+.ConnectionUp1Mini {
+    position: absolute;
+    transform: rotateY(0deg) rotate(135deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 0.75rem solid transparent;
+    border-right: 1.5rem solid green;
+    border-bottom: 0.75rem solid transparent;
+    box-shadow: 0px 0px 0px #888; 
+
+}
+
+
+
+
+.ConnectionDown2 {
+    position: absolute;
+    transform: rotateY(0deg) rotate(100deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 1.5rem solid transparent;
+    border-right: 2.5rem solid green;
+    border-bottom: 1.5rem solid transparent;
+    box-shadow: 0px 0px 0px green; 
+    transform-origin: center center;
+
+}
+
+
+.ConnectionDown2Mini {
+    position: absolute;
+    transform: rotateY(0deg) rotate(100deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 0.75rem solid transparent;
+    border-right: 1.5rem solid green;
+    border-bottom: 0.75rem solid transparent;
+    box-shadow: 0px 0px 0px green; 
+    transform-origin: center center;
+
+}
+
+.ConnectionUp2 {
+    position: absolute;
+    transform: rotateY(0deg) rotate(-75deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 1.5rem solid transparent;
+    border-right: 2.5rem solid green;
+    border-bottom: 1.5rem solid transparent;
+    box-shadow: 0px 0px 0px #888; 
+
+}
+
+.ConnectionUp2Mini {
+    position: absolute;
+    transform: rotateY(0deg) rotate(-75deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 0.75rem solid transparent;
+    border-right: 1.5rem solid green;
+    border-bottom: 0.75rem solid transparent;
+    box-shadow: 0px 0px 0px #888; 
+
+}
+
+.ConnectionRight3 {
+    position: absolute;
+    transform: rotateY(0deg) rotate(180deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 1.5rem solid transparent;
+    border-right: 2.5rem solid green;
+    border-bottom: 1.5rem solid transparent;
+    box-shadow: 0px 0px 0px green; 
+    transform-origin: center center;
+
+}
+
+.ConnectionRight3Mini {
+    position: absolute;
+    transform: rotateY(0deg) rotate(180deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 0.75rem solid transparent;
+    border-right: 1.5rem solid green;
+    border-bottom: 0.75rem solid transparent;
+    box-shadow: 1px 0px 0px green; 
+    transform-origin: center center;
+
+}
+
+.ConnectionRight32 {
+    position: absolute;
+    transform: rotateY(0deg) rotate(0deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 1.5rem solid transparent;
+    border-right: 2.5rem solid green;
+    border-bottom: 1.5rem solid transparent;
+    box-shadow: 0px 0px 0px green; 
+    transform-origin: center center;
+
+}
+
+.ConnectionRight32Mini {
+    position: absolute;
+    transform: rotateY(0deg) rotate(0deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 0.75rem solid transparent;
+    border-right: 1.5rem solid green;
+    border-bottom: 0.75rem solid transparent;
+    box-shadow: 0px 0px 0px green; 
+    transform-origin: center center;
+
+}
+
+
+.ConnectionLeft3 {
+    position: absolute;
+    transform: rotateY(0deg) rotate(-0deg);
+    border: 0px solid #666;
+	border-radius: 0px;
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 1.5rem solid transparent;
+    border-right: 2.5rem solid green;
+    border-bottom: 1.5rem solid transparent;
+    box-shadow: 0px 0px 0px #888; 
+}
+
+.ConnectionL {
+    
+    position: absolute;
+    border: 0px solid #666;
+	border-radius: 0px;
+    left:50%;
+    top:9%; 
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+    justify-content: center;
+    border-top: 2.5rem solid transparent;
+    border-right: 3rem solid grey;
+    border-bottom: 2.5rem solid transparent;
+    box-shadow: 0px 0px 0px #888;
+}
+
+.ConnectionTail {
+    opacity: 0.5;
+    position: absolute;
+    left:13%;
+    top:9%; 
+    height: 2.5rem;
+    width: 16rem;
+    background-color: orangered;
+    border: 8px solid gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px #888;
+    font: 13px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ConnectionTail:hover{
+    opacity: 1;
+    cursor: pointer; 
+}
+
+.BPlanet {
+    top: 20%;
+    position: absolute;
+    background-color: skyblue;
+    border-radius: 200px;
+    left: -5%;
+    width: 5rem;
+    height: 5rem;
+    font: 20px Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    line-height: 5rem;
+}
+
+.RPlanet {
+    position: absolute;
+    top: 20%;
+    background-color: red;
+    border-radius: 200px;
+    left: 10%;
+    width: 5rem;
+    height: 5rem;
+    font: 20px Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 5rem;
+}
+
+
+.BPlanet:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.RPlanet:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Fish {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    border-style: none!important;
+    background: transparent;
+	box-shadow: 0px 0px 0px #888;
+}
+
+.FishInstruct {
+    position: absolute;
+    white-space: nowrap;
+    top: 10%;
+    left: 30%;
+    margin-bottom: 1rem;
+    height: 300%;
+    margin-top: 2rem;
+    border-style: none!important;
+    background: transparent;
+    box-shadow: 0px 0px 0px #888;
+}
+
+/* frame above agents for instructions etc. */
+.legend {
+    position:absolute;
+    left:25%;
+    top:80%; 
+    width: 350px;
+    height: 20px;
+    font: 20px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+    text-align: left;
+    background: transparent;
+	box-shadow: 0px 0px 0px #888;
+}
+
+.legendC {
+    position:absolute;
+    left:15%;
+    top:80%; 
+    width: 350px;
+    height: 20px;
+    font: 15px Arial, sans-serif;
+    font-weight: bold;
+    border-style: none!important;
+    text-align: left;
+    background: transparent;
+	box-shadow: 0px 0px 0px #888;
+}
+
+.ConnectionTailInst {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 2rem;
+    width: 19rem;
+    background-color:grey;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 10px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(-18deg);
+    align-items: center;
+}
+
+.ConnectionTailInst2 {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 2rem;
+    width: 19rem;
+    background-color:grey;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 10px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(18deg);
+    align-items: center;
+}
+
+
+.ConnectionTail1 {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 2rem;
+    width: 14rem;
+    background-color:grey;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 10px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(-45deg);
+    align-items: center;
+}
+
+.ConnectionTail1Mini {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 0.5rem;
+    width: 14rem;
+    background-color:grey;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 8px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(-45deg);
+    align-items: center;
+}
+
+.ConnectionTail2Mini {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 0.5rem;
+    width: 14rem;
+    background-color:grey;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 8px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(45deg);
+    align-items: center;
+}
+
+.ConnectionTail3Mini {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 0.5rem;
+    width: 14rem;
+    background-color:grey;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 8px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    /* transform: rotateY(0deg) rotate(-45deg); */
+    align-items: center;
+}
+
+.ConnectionTail2 {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 2rem;
+    width: 14rem;
+    background-color:grey;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 10px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(45deg);
+    align-items: center;
+}
+
+.ConnectionTail3 {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 2rem;
+    width: 14rem;
+    background-color:grey;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 10px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

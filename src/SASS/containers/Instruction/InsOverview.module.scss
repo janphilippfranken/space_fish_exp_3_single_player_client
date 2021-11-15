@@ -1,0 +1,60 @@
+@import '../../constants.scss';
+
+.InsOverview {
+    display: grid;
+    grid-template-columns: 1fr 50rem 1fr;
+    grid-template-areas: ". text .";
+    margin-bottom:  5rem;
+}
+
+.PlanetColorRed {
+    color: red;
+}
+
+.PlanetColorBlue {
+    color: blue;
+}
+
+
+.InsReminder {
+    text-align: justify;
+    grid-area: text;
+    padding: 1rem;
+    background-color: white;
+}
+
+.InnerContainer {
+    text-align: justify;
+    grid-area: text;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 0.5rem;
+
+    & img {
+        width: 50%;
+        margin-left: 26%;
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+
+    }
+}
+
+.ImageContainer {
+    text-align: justify;
+    grid-area: text;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 0.5rem;
+
+    & img {
+        width: 45%;
+        margin-left: 55%;
+        margin-bottom: 0rem;
+        // top: -100%;
+    }
+
+}
+
+
+
+

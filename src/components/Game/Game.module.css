@@ -1,0 +1,13 @@
+.Container {
+    display: grid;
+    grid-template-rows: 7em 1fr;
+    grid-template-areas: "logo" "rest";
+    background-color: 'grey';
+}
+
+.Main {
+    position: absolute;
+    left: 10rem;
+    top: 1rem; 
+    grid-area: rest;
+}
