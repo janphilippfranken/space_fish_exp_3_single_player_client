@@ -87,10 +87,10 @@ const GameInterface = props => {
             <h3>{conditionData.title}</h3>
             <hr />
             
-            {/* <div display={"none"} className={classes.GameContainerStructure}>
-                {/* <StructureFrameMini display={planetDisplay} ></StructureFrameMini> */}
+            <div display={"none"} className={classes.GameContainerStructure}>
+                <StructureFrameMini display={planetDisplay} ></StructureFrameMini> 
                 {/* <StructureFrameMini display={""} ></StructureFrameMini> */}
-            {/* </div>  */}
+            </div> 
             {/* <div className={classes.ParagraphContainer}> */}
             <div className={classes.GameContainer}>
                 

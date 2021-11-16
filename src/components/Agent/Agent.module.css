@@ -793,3 +793,24 @@
     justify-content: center;
     align-items: center;
 }
+
+
+.ConnectionTail4Mini {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 0.5rem;
+    width: 14rem;
+    background-color:grey;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 8px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(30deg);
+    align-items: center;
+}

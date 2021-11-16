@@ -143,13 +143,26 @@ const StructureFrameMini = props => {
             <Agent display={playerPos[currSubjId][0] > playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject1' && thisParticipant.condition === 'lr' || playerPos[currSubjId][0] > playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject2' || playerPos[currSubjId][0] > playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject3'? '' : 'none'} opacity={"1.0"} borderColor={"green"}  agent_id="ConnectionTail3Mini" top={"36%"} left={'15%'} width={'3rem'}></Agent> 
             <MiniArrows display={playerPos[currSubjId][0] > playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject2' || playerPos[currSubjId][0] > playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject3'? '' : 'none'} arrow_id="Right" top={"54.3%"} left={'26%'}> </MiniArrows> 
             <MiniArrows display={playerPos[currSubjId][0] > playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject1' && thisParticipant.condition === 'lr'? '' : 'none'} arrow_id="Left" top={"54.3%"} left={'13%'}> </MiniArrows> 
+            
 
-           
-           
-           
-            {/* thisPartic ipant.stimuli === 'subject2' || thisParticipant.stimuli === 'subject3'? '' : 'none' */}
+            
+            {/* bulding in frame connections */}
 
-          
+            {/* <Agent display={playerPos[currSubjId][0] > playerPos[currSubjId][1] && beforeSelect && thisParticipant.stimuli === 'subject1' || playerPos[currSubjId][0] > playerPos[currSubjId][1] && beforeSelect && thisParticipant.stimuli === 'subject3' && thisParticipant.condition === "lr" || playerPos[currSubjId][0] > playerPos[currSubjId][1] && beforeSelect && thisParticipant.stimuli === 'subject2' && thisParticipant.condition === "lr"? '' : 'none'} opacity={"1.0"}  borderColor={thisParticipant.stimuli === 'subject2' || thisParticipant.stimuli === 'subject3'? 'green' : "green"}  agent_id="ConnectionTail1Mini" top={"25%"} left={'9%'} width={'3rem'}></Agent> 
+            <MiniArrows display={playerPos[currSubjId][0] > playerPos[currSubjId][1] && beforeSelect && thisParticipant.stimuli === 'subject2' && thisParticipant.condition === "lr"? '' : 'none'} arrow_id="Down1" top={"149%"} left={'8.5%'}> </MiniArrows>
+            <MiniArrows display={playerPos[currSubjId][0] > playerPos[currSubjId][1] && beforeSelect && thisParticipant.stimuli === 'subject1' || playerPos[currSubjId][0] > playerPos[currSubjId][1] && beforeSelect && thisParticipant.stimuli === 'subject3' && thisParticipant.condition === "lr"? '' : 'none'} arrow_id="Up1" top={"138%"} left={'15.8%'}> </MiniArrows> */}
+             {/* Connections */}
+            {/* Second Pair  */}
+            {/* <Agent display={playerPos[currSubjId][0] > playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject1' || playerPos[currSubjId][0] > playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject2' || playerPos[currSubjId][0] > playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject3'? '' : 'none'} opacity={"1.0"}  borderColor={thisParticipant.stimuli === 'subject1'? 'green' : "green"} agent_id="ConnectionTail2Mini" top={"25%"} left={'24.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={playerPos[currSubjId][0] > playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject2' || playerPos[currSubjId][0] > playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject3'? '' : 'none'} arrow_id="Down2" top={"149%"} left={'31.5%'}></MiniArrows> 
+            <MiniArrows display={playerPos[currSubjId][0] > playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject1'? '' : 'none'} arrow_id="Up2" top={"138%"} left={'23.5%'}></MiniArrows> */}
+            {/* Connections */}
+            {/* Third Pair  */}
+            {/* <Agent display={playerPos[currSubjId][0] > playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject1' && thisParticipant.condition === 'lr' || playerPos[currSubjId][0] > playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject2' || playerPos[currSubjId][0] > playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject3'? '' : 'none'} opacity={"1.0"} borderColor={"green"}  agent_id="ConnectionTail3Mini" top={"36%"} left={'15%'} width={'3rem'}></Agent> 
+            <MiniArrows display={playerPos[currSubjId][0] > playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject2' || playerPos[currSubjId][0] > playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject3'? '' : 'none'} arrow_id="Right" top={"154.3%"} left={'26%'}> </MiniArrows> 
+            <MiniArrows display={playerPos[currSubjId][0] > playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject1' && thisParticipant.condition === 'lr'? '' : 'none'} arrow_id="Left" top={"154.3%"} left={'13%'}> </MiniArrows> 
+             */}
+           
         
             {/* <Button display={youTwoDown != 'none' && notYouTwoDown != 'none' && youThreeDown != 'none' && notYouThreeDown != 'none' && twoThreeRight != 'none' && notTwoThreeRight != 'none' && threeTwoLeft != 'none' && notThreeTwoLeft != 'none'?  '' : 'none'} position={'absolute'} left={'40%'} top={'111.5%'} clicked={onNextHandler}>Next</Button> */}
             {props.children}

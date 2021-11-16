@@ -32,6 +32,13 @@
     transform: rotate(-135deg);
 }
 
+.Down3 {
+    position: absolute;
+    transform: rotate(150deg);
+    transform: rotate(-150deg);
+}
+
+
 .Up1 {
     position: absolute;
     transform: rotate(45deg);

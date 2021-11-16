@@ -6,11 +6,11 @@ import Scores from '../Scores/Scores';
 import { getSocket } from '../../socket.io/socket-setup';
 import { useDispatch, useSelector } from 'react-redux';
 import classes from './PlanetFrame.module.css';
+import MiniArrows from '../MiniArrows/MiniArrows';
 import PrivateEvidenceBetweenTrials from '../PrivateEvidenceBetweenTrials/PrivateEvidenceBetweenTrials';
-import structureFrame from '../StructureFrame/StructureFrame';
 import { storeSELECTION } from '../../store/actions/participantData';
 import blueFishImage from '../../static/images/blue_fish.png';
-import reminderSound from '../../static/sounds/reminder_sound.mp3';
+// import reminderSound from '../../static/sounds/reminder_sound.mp3';
 import redFishImage from '../../static/images/red_fish.png';
 import { incrementCondition } from '../../store/actions/conditionData';
 import { pages, goToPage } from '../../store/actions/navigation';
@@ -164,8 +164,8 @@ const PlanetFrame = props => {
     },[remainingTime2]);
    
     const play = () => {   
-        const beepsound = new Audio(reminderSound);   
-        beepsound.play();   
+        // const beepsound = new Audio(reminderSound);   
+        // beepsound.play();   
     };   
 
 
@@ -719,6 +719,34 @@ const PlanetFrame = props => {
             <Scores display={checkSelectedScore(thisParticipant.id) === true && checkScoreDisplays(9) === true && afterSelect === '' && checkScoreDisplays(10) === "wait"? showScore : scoreDisplays[0]} background={room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject1' || room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject2' || room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject3' && thisParticipant.condition === 'lr'? room.planetSelections[bKey][9].color : bChoices[0][1]}  id="B1_Big" score_id="B1_Big"  top={'18%'}   left={BPos[3]}>{room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject1' || room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject2' || room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject3' && thisParticipant.condition === 'lr'? room.planetSelections[bKey][9].confidence : bChoices[0][0]}</Scores> 
             <Scores display={checkSelectedScore(thisParticipant.id) === true && checkScoreDisplays(9) === true && afterSelect === '' && checkScoreDisplays(10) === "wait"? showScore : scoreDisplays[0]} background={room.planetSelections[cKey] && room.planetSelections[cKey][9] && thisParticipant.stimuli === 'subject1' || room.planetSelections[cKey] && room.planetSelections[cKey][9] && thisParticipant.stimuli === 'subject3'? room.planetSelections[cKey][9].color : cChoices[0][1]}  id="C1_Big" score_id="C1_Big"  top={'18%'}   left={CPos[3]}>{room.planetSelections[cKey] && room.planetSelections[cKey][9] && thisParticipant.stimuli === 'subject1' || room.planetSelections[cKey] && room.planetSelections[cKey][9] && thisParticipant.stimuli === 'subject3'? room.planetSelections[cKey][9].confidence : cChoices[0][0]}</Scores> 
             
+            {/* displaying agent connections per trial in third experiment - these are fixe positions as we do not randomise position anymore */}
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"11.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true? '': 'none'} arrow_id="Down3" top={"23.5%"} left={'87.9%'}> </MiniArrows>
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"19.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true? '': 'none'} arrow_id="Down3" top={"31.5%"} left={'87.9%'}> </MiniArrows>
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"27.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true? '': 'none'} arrow_id="Down3" top={"39.5%"} left={'87.9%'}> </MiniArrows> 
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"35.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true? '': 'none'} arrow_id="Down3" top={"47.5%"} left={'87.9%'}> </MiniArrows> 
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"43.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true? '': 'none'} arrow_id="Down3" top={"55.5%"} left={'87.9%'}> </MiniArrows> 
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"51.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true? '': 'none'} arrow_id="Down3" top={"63.5%"} left={'87.9%'}> </MiniArrows> 
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"59.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true? '': 'none'} arrow_id="Down3" top={"71.5%"} left={'87.9%'}> </MiniArrows> 
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"67.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true? '': 'none'} arrow_id="Down3" top={"79.5%"} left={'87.9%'}> </MiniArrows> 
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"75.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true? '': 'none'} arrow_id="Down3" top={"87.5%"} left={'87.9%'}> </MiniArrows> 
+
 
             <Action action_id="border_frame"></Action>
 
