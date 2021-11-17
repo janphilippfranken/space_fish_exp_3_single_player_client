@@ -4,11 +4,11 @@ import URLs from './URLs';
 let socket;
 
 export const initSocket = httpServer => {
-    // socket = io(URLs.SERVER_DEV) ; // uncomment for running offline
+    socket = io(URLs.SERVER_DEV) ; // uncomment for running offline
     // socket = io(URLs.SERVER_DEPLOY); // uncomment for running online
-    socket = io(
-        URLs.SERVER_ECO,
-        {path: '/s1938897_space_fish_exp_3_single_player_server/socket.io'}); // uncomment for running on eco
+    // socket = io(
+    //     URLs.SERVER_ECO,
+    //     {path: '/s1938897_space_fish_exp_3_single_player_server/socket.io'}); // uncomment for running on eco
     return socket;
 };
 
