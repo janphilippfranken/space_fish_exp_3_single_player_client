@@ -187,9 +187,9 @@ const PlanetFrame = props => {
     // getting ip address to track if we have multiple completions 
     const [IPAdress, setIPAdress] = useState('none');
     
-    (async () => {
-          setIPAdress(await publicIp.v4());
-    })();
+    // (async () => {
+    //       setIPAdress(await publicIp.v4());
+    // })();
   
   
       
