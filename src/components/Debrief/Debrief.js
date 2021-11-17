@@ -67,7 +67,7 @@ const Debrief = props => {
 
         } else {
            
-            socket.emit('debrief-selected',
+            socket.emit('planet-selected',
             {
                 planetSelectionTrial: { participantId: thisParticipant.id, debriefData: debriefData, conditionNumber: conditionNumber, participantPID: thisParticipant.pid.pid },
                 roomId: room.id 
