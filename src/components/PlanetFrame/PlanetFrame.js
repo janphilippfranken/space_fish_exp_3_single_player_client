@@ -10,7 +10,7 @@ import MiniArrows from '../MiniArrows/MiniArrows';
 import PrivateEvidenceBetweenTrials from '../PrivateEvidenceBetweenTrials/PrivateEvidenceBetweenTrials';
 import { storeSELECTION } from '../../store/actions/participantData';
 import blueFishImage from '../../static/images/blue_fish.png';
-// import reminderSound from '../../static/sounds/reminder_sound.mp3';
+import reminderSound from '../../static/sounds/reminder_sound.mp3';
 import redFishImage from '../../static/images/red_fish.png';
 import { incrementCondition } from '../../store/actions/conditionData';
 import { pages, goToPage } from '../../store/actions/navigation';
