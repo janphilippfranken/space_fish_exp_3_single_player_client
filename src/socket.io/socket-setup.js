@@ -4,7 +4,7 @@ import URLs from './URLs';
 let socket;
 
 export const initSocket = httpServer => {
-    socket = io(URLs.SERVER_DEV) ; // uncomment for running offline
+    // socket = io(URLs.SERVER_DEV) ; // uncomment for running offline
     // socket = io(URLs.SERVER_DEPLOY); // uncomment for running online
     socket = io(
         URLs.SERVER_ECO,
