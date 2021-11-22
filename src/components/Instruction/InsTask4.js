@@ -218,7 +218,7 @@ const InsTask= props => {
         if (training_clicks === 2) {
             dispatch(storeSocialTraining({socialTraining: training_responses}));
             setLabelDisplay('none');
-            setInitText('You will now see whether either Simon or Jim could see the judgments of the other.')
+            setInitText('You will now see whether either Jim or Simon could see the judgments of the other.')
             setCheckFishText("Continue");
 
         };
@@ -243,18 +243,18 @@ const InsTask= props => {
 
 
                 {/* no fish */}
-                <Agent display={labelDisplay} id="A1_Big" agent_id="legend"  top={'-20%'} left={'18%'}  >Simon's Judgment</Agent> 
-                <Agent display={labelDisplay} id="A1_Big" agent_id="legend"  top={'-20%'} left={'39%'}  >Jim's Judgment</Agent> 
+                <Agent display={labelDisplay} id="A1_Big" agent_id="legend"  top={'-20%'} left={'39%'}  >Simon's Judgment</Agent> 
+                <Agent display={labelDisplay} id="A1_Big" agent_id="legend"  top={'-20%'} left={'18%'}  >Jim's Judgment</Agent> 
                 <Scores display={!showFish && training_clicks === 0? '': 'none'} background={'white'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'23%'}  >{'?'}</Scores> 
                 <Scores display={!showFish && training_clicks === 0? '': 'none'} background={'white'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'42%'}  >{'?'}</Scores> 
                 
                 {/* red example */}
-                <Scores display={showFish && training_clicks === 0 && randFish === 'red'? '': 'none'} background={'lightgrey'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'23%'}  >{0}</Scores> 
-                <Scores display={showFish && training_clicks === 0 && randFish === 'red'? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'42%'}  >{3}</Scores> 
+                <Scores display={showFish && training_clicks === 0 && randFish === 'red'? '': 'none'} background={'lightgrey'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'42%'}  >{0}</Scores> 
+                <Scores display={showFish && training_clicks === 0 && randFish === 'red'? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'23%'}  >{3}</Scores> 
                 
                 {/* red example */}
-                <Scores display={showFish && training_clicks === 1 && randFish === 'red'? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'23%'}  >{2}</Scores> 
-                <Scores display={showFish && training_clicks === 1 && randFish === 'red'? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'42%'}  >{3}</Scores> 
+                <Scores display={showFish && training_clicks === 1 && randFish === 'red'? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'42%'}  >{2}</Scores> 
+                <Scores display={showFish && training_clicks === 1 && randFish === 'red'? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'23%'}  >{3}</Scores> 
                 
 
                 <Agent position={'absolute'} left={'0%'} top={'4%'} width={'400px'} agent_id="FishInstruct" display={showFish && training_clicks === 0 && randFish === 'red'? '' : 'none'}>

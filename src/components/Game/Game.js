@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { initSocket } from '../../socket.io/socket-setup';
 import Button from '../../components/Button/Button';
 import { useEffect, useState } from 'react';
-import { registerParticipantId, registerParticipantStimuli, registerParticipantCondition, registerParticipantFish, registerParticipantPosition, registerParticipantPID, registerParticipantTraining, registerParticipantSocialTraining, registerParticipantSocialTrainingStructure } from '../../store/actions/currentParticipant';
+import { registerParticipantId, registerParticipantStimuli, registerParticipantCondition, registerParticipantFish, registerParticipantPosition, registerParticipantStructureHint, registerParticipantPID, registerParticipantTraining, registerParticipantSocialTraining, registerParticipantSocialTrainingStructure } from '../../store/actions/currentParticipant';
 import { registerRoom } from '../../store/actions/currentRoom';
 
 import GameInterface from '../GameInterface/GameInterface';
@@ -92,6 +92,7 @@ const Game = () => {
             dispatch(registerParticipantCondition(currentParticipant.stimuli[1])); 
             dispatch(registerParticipantFish(currentParticipant.stimuli[2])); 
             dispatch(registerParticipantPosition(currentParticipant.stimuli[3])); 
+            dispatch(registerParticipantStructureHint(currentParticipant.stimuli[4])); 
             // console.log(training);
             // console.log('insideGame')
             dispatch(registerParticipantTraining(training));

@@ -244,25 +244,25 @@ const InsTask= props => {
 
 
                 {/* no fish */}
-                <Agent display={labelDisplay} id="A1_Big" agent_id="legend"  top={'-15%'} left={'12%'}  >Simon's Judgments</Agent> 
-                <Agent display={labelDisplay} id="A1_Big" agent_id="legend"  top={'-15%'} left={'45%'}  >Jim's Judgments</Agent> 
+                <Agent display={labelDisplay} id="A1_Big" agent_id="legend"  top={'-15%'} left={'45%'}  >Simon's Judgments</Agent> 
+                <Agent display={labelDisplay} id="A1_Big" agent_id="legend"  top={'-15%'} left={'12%'}  >Jim's Judgments</Agent> 
 
                 <Agent display={labelDisplay} id="A1_Big" agent_id="legend"  top={'-3%'} left={'7%'}  >Round 1</Agent> 
                 <Agent display={labelDisplay} id="A1_Big" agent_id="legend"  top={'16%'} left={'7%'}  >Round 2</Agent> 
 
                 {/* first example */}
-                <Scores display={training_clicks === 0? '': 'none'} background={'lightgray'}  id="A1_Big" score_id="A1_Big"  top={'-9%'} left={'17%'}  >{0}</Scores> 
-                <Scores display={training_clicks === 0? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-9%'} left={'48%'}  >{3}</Scores> 
+                <Scores display={training_clicks === 0? '': 'none'} background={'lightgray'}  id="A1_Big" score_id="A1_Big"  top={'-9%'} left={'48%'}  >{0}</Scores> 
+                <Scores display={training_clicks === 0? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-9%'} left={'17%'}  >{3}</Scores> 
                 
                 {/* second example */}
-                <Scores display={training_clicks === 0? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'10%'} left={'17%'}  >{2}</Scores> 
-                <Scores display={training_clicks === 0? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'10%'} left={'48%'}  >{3}</Scores> 
+                <Scores display={training_clicks === 0? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'10%'} left={'48%'}  >{2}</Scores> 
+                <Scores display={training_clicks === 0? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'10%'} left={'17%'}  >{3}</Scores> 
                 
                 {/*  example edge from jim to simon */}
                 {/* <Agent display={training_clicks === 0? '': 'none'} background={'red'}  opacity={"1.0"} borderColor={"red"} agent_id="ConnectionTailInst2" top={"5%"} left={'24%'} width={'14rem'}><b className={Classes.BlockText}>-------</b>Jim sees<b className={Classes.BlockText}>----------------------------</b> Simon's</Agent>  */}
-                <Agent display={training_clicks === 0? '': 'none'} background={'red'}  opacity={"1.0"} borderColor={"green"} agent_id="ConnectionTailInst" top={"5%"} left={'26.5%'} width={'14rem'}>Simon sees Jim's</Agent> 
+                <Agent display={training_clicks === 0? '': 'none'} background={'red'}  opacity={"1.0"} borderColor={"green"} agent_id="ConnectionTailInst3" top={"5%"} left={'23.5%'} width={'14rem'}>Simon sees Jim's</Agent> 
                
-                <Agent display={training_clicks === 0? '': 'none'} background={'red'}  agent_id="ConnectionDownInst" top={"11.8%"} left={'24%'}></Agent> 
+                <Agent display={training_clicks === 0? '': 'none'} background={'red'}  agent_id="ConnectionDownInst" top={"12%"} left={'42%'}></Agent> 
 
                 <Agent display={textDisplay} id="FishInstruct" agent_id="FishInstruct"  top={'30%'} left={'20%'}  >Please update your judgment <b>one more time</b>.</Agent> 
                

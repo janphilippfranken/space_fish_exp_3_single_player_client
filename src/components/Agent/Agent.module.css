@@ -260,7 +260,7 @@
 
 .ConnectionDownInst {
     position: absolute;
-    transform: rotateY(0deg) rotate(-20deg);
+    transform: rotateY(0deg) rotate(-38deg);
     border: 0px solid #666;
 	border-radius: 0px;
     width: 0rem;
@@ -671,6 +671,26 @@
     display: flex;
     justify-content: center;
     transform: rotateY(0deg) rotate(18deg);
+    align-items: center;
+}
+
+.ConnectionTailInst3 {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 2rem;
+    width: 19rem;
+    background-color:grey;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 10px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(+18deg);
     align-items: center;
 }
 

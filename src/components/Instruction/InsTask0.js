@@ -49,8 +49,8 @@ const InsTask= props => {
                 <p><b>Your job is to work out which planet you are at over the course of your fishing trip</b>. To do this you will need to pay attention to whatever fish you catch yourself (you will get 10 attempts to fish) but you may also be able to draw on the judgments of one or both the other players.</p><br></br>
 
 
-                <p>After each fishing attempt you and the the other two players will update your judgments about which planet you are all at. You may or may not be able to see the judgments of one or both the other players.</p><br></br>
-
+                {/* <p>After each fishing attempt you and the the other two players will update your judgments about which planet you are all at. You may or may not be able to see the judgments of one or both the other players.</p><br></br> */}
+                <p>After each fishing attempt you and the the other two players will update your judgments about which planet you are all at. You will be able to see the judgments of both the other players.</p><br></br>
                 {/* <p><b>DEV::STRUCTURE UNKNOWN</b>While it will be clear whose signals you can see, <b>you can’t be sure what the other players can see</b>. That is, you cannot be sure whether player 2 can see player 3's judgments or if player 3 can see player 2's judgments or if either player can see your own judgments. Below is an illustration showing one possibility. Here, Chris can see the judgments of both Neil and Simon. Simon sees Neil's judgment but can't see Chris’. Neil can see neither Chris' nor Simon's judgments.</p><br></br><br></br> */}
 
                 {/* <p>In addition to seeing other players' judgments yourself, <b>you also know what the other players can see</b>. That is, you will know whether player 2 can see player 3's judgments or if player 3 can see player 2's judgments or if either player can see your own judgments. Below is an illustration showing one possibility. Here, Chris can see the judgments of both Neil and Simon. Simon sees Neil's judgment but can't see Chris’. Neil can see neither Chris' nor Simon's judgments.</p><br></br><br></br>

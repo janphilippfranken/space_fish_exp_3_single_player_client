@@ -180,6 +180,10 @@ const PlanetFrame = props => {
     const training = useSelector(state => state.training);
     const socialTraining = useSelector(state => state.socialTraining);
     const socialTrainingStructure = useSelector(state => state.socialTrainingStructure);
+
+    console.log('check hint');
+    console.log(thisParticipant);
+    console.log(thisParticipant.structureHint);
     
  
     // console.log(socialTraining);
@@ -451,7 +455,7 @@ const PlanetFrame = props => {
         // console.log(training);
         socket.emit('planet-selected',
             {
-                planetSelectionTrial: { participantId: thisParticipant.id, confidence: confidence, color: planetSelected, conditionNumber: conditionNumber, participantPID: PID, participantNumber: thisParticipant.stimuli, globalCondition: thisParticipant.condition, globalFish: thisParticipant.fish, simulatedResponse: simulatedResponse, IPAdress: IPAdress, training: training, socialTraining: socialTraining, socialTrainingStructure: socialTrainingStructure },
+                planetSelectionTrial: { participantId: thisParticipant.id, confidence: confidence, color: planetSelected, conditionNumber: conditionNumber, participantPID: PID, participantNumber: thisParticipant.stimuli, globalCondition: thisParticipant.condition, structureHint: thisParticipant.structureHint, globalFish: thisParticipant.fish, simulatedResponse: simulatedResponse, IPAdress: IPAdress, training: training, socialTraining: socialTraining, socialTrainingStructure: socialTrainingStructure },
                 roomId: room.id 
             })
 
@@ -719,33 +723,34 @@ const PlanetFrame = props => {
             <Scores display={checkSelectedScore(thisParticipant.id) === true && checkScoreDisplays(9) === true && afterSelect === '' && checkScoreDisplays(10) === "wait"? showScore : scoreDisplays[0]} background={room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject1' || room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject2' || room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject3' && thisParticipant.condition === 'lr'? room.planetSelections[bKey][9].color : bChoices[0][1]}  id="B1_Big" score_id="B1_Big"  top={'18%'}   left={BPos[3]}>{room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject1' || room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject2' || room.planetSelections[bKey] && room.planetSelections[bKey][9] && thisParticipant.stimuli === 'subject3' && thisParticipant.condition === 'lr'? room.planetSelections[bKey][9].confidence : bChoices[0][0]}</Scores> 
             <Scores display={checkSelectedScore(thisParticipant.id) === true && checkScoreDisplays(9) === true && afterSelect === '' && checkScoreDisplays(10) === "wait"? showScore : scoreDisplays[0]} background={room.planetSelections[cKey] && room.planetSelections[cKey][9] && thisParticipant.stimuli === 'subject1' || room.planetSelections[cKey] && room.planetSelections[cKey][9] && thisParticipant.stimuli === 'subject3'? room.planetSelections[cKey][9].color : cChoices[0][1]}  id="C1_Big" score_id="C1_Big"  top={'18%'}   left={CPos[3]}>{room.planetSelections[cKey] && room.planetSelections[cKey][9] && thisParticipant.stimuli === 'subject1' || room.planetSelections[cKey] && room.planetSelections[cKey][9] && thisParticipant.stimuli === 'subject3'? room.planetSelections[cKey][9].confidence : cChoices[0][0]}</Scores> 
             
-            {/* displaying agent connections per trial in third experiment - these are fixe positions as we do not randomise position anymore */}
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"11.3%"} left={'85%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true? '': 'none'} arrow_id="Down3" top={"23.5%"} left={'87.9%'}> </MiniArrows>
 
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"19.3%"} left={'85%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true? '': 'none'} arrow_id="Down3" top={"31.5%"} left={'87.9%'}> </MiniArrows>
+            {/* displaying agent connections per trial in third experiment - these are fixe positions as we do not randomise position anymore. they are only shown in the strong structure manipulation */}
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"11.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down3" top={"23.5%"} left={'87.9%'}> </MiniArrows>
 
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"27.3%"} left={'85%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true? '': 'none'} arrow_id="Down3" top={"39.5%"} left={'87.9%'}> </MiniArrows> 
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"19.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down3" top={"31.5%"} left={'87.9%'}> </MiniArrows>
 
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"35.3%"} left={'85%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true? '': 'none'} arrow_id="Down3" top={"47.5%"} left={'87.9%'}> </MiniArrows> 
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"27.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down3" top={"39.5%"} left={'87.9%'}> </MiniArrows> 
 
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"43.3%"} left={'85%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true? '': 'none'} arrow_id="Down3" top={"55.5%"} left={'87.9%'}> </MiniArrows> 
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"35.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down3" top={"47.5%"} left={'87.9%'}> </MiniArrows> 
 
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"51.3%"} left={'85%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true? '': 'none'} arrow_id="Down3" top={"63.5%"} left={'87.9%'}> </MiniArrows> 
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"43.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down3" top={"55.5%"} left={'87.9%'}> </MiniArrows> 
 
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"59.3%"} left={'85%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true? '': 'none'} arrow_id="Down3" top={"71.5%"} left={'87.9%'}> </MiniArrows> 
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"51.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down3" top={"63.5%"} left={'87.9%'}> </MiniArrows> 
 
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"67.3%"} left={'85%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true? '': 'none'} arrow_id="Down3" top={"79.5%"} left={'87.9%'}> </MiniArrows> 
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"59.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down3" top={"71.5%"} left={'87.9%'}> </MiniArrows> 
 
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"75.3%"} left={'85%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true? '': 'none'} arrow_id="Down3" top={"87.5%"} left={'87.9%'}> </MiniArrows> 
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"67.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down3" top={"79.5%"} left={'87.9%'}> </MiniArrows> 
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"75.3%"} left={'85%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down3" top={"87.5%"} left={'87.9%'}> </MiniArrows> 
 
 
             <Action action_id="border_frame"></Action>
