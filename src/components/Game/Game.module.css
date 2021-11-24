@@ -1,13 +1,22 @@
 .Container {
-    display: grid;
+    /* display: grid;
     grid-template-rows: 7em 1fr;
     grid-template-areas: "logo" "rest";
-    background-color: 'grey';
+    background-color: 'grey'; */
+    position: aboslute; margin: auto;
+    position:relative;
+    margin: auto;
+    clear:left;
+    height:auto;
+    grid-area: rest;
 }
 
 .Main {
-    position: absolute;
-    left: 10rem;
-    top: 1rem; 
+    position: aboslute; margin: auto;
+    position:relative;
+    margin: auto;
+    clear:left;
+    height:auto;
     grid-area: rest;
+    
 }
