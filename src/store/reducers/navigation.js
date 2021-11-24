@@ -1,7 +1,7 @@
 import { GO_TO_PAGE, pages } from '../actions/navigation';
 
 const initialState = {
-    currentPage: pages.ETHICS
+    currentPage: pages.REGISTER
 };
 
 

@@ -26,6 +26,7 @@ const GameInterface = props => {
     // const dispatch = useDispatch();
     // const conditionNumber = useSelector(state => state.conditionData.conditionNumber);
     const conditionData = useSelector(state => state.conditionData.conditionData[state.conditionData.conditionNumber]);
+    const thisParticipant = useSelector(state => state.currentParticipant);
     
 
     // useEffect(() => {
@@ -88,7 +89,7 @@ const GameInterface = props => {
             <hr />
             
             <div display={"none"} className={classes.GameContainerStructure}>
-                <StructureFrameMini display={planetDisplay} ></StructureFrameMini> 
+                <StructureFrameMini display={thisParticipant.structureHint === 'strong'? planetDisplay : 'none'} ></StructureFrameMini> 
                 {/* <StructureFrameMini display={""} ></StructureFrameMini> */}
             </div> 
             {/* <div className={classes.ParagraphContainer}> */}
