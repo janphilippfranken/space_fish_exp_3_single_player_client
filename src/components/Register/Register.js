@@ -11,6 +11,7 @@ const Register = () => {
     const [remainingTime, setRemainingTime] = useState(30);
     const [startTime, setStartTime] = useState(1);
     const [gameStarting, setGameStarting] = useState(false);
+    const [registerTimeUp, setRegisterTimeUp] = useState(false);
 
     const play = () => {   
         // const beepsound = new Audio('https://www.soundjay.com/button/sounds/beep-01a.mp3');   
@@ -28,11 +29,14 @@ const Register = () => {
             if (remainingTime === 0) {
                 // window.location.replace("http://www.sorrytoolate.com/");
                 alert('Please register with a username now');
+                setRemainingTime(5);
+                setRegisterTimeUp(true);
             };
             setStartTime(startTime-1);
             if (startTime===0 && participantName.length >= 2 && participantName.length <= 5) {
                 dispatch(registerParticipantName(participantName));
                 dispatch(goToPage(pages.GAME));
+                setRegisterTimeUp(true);
             };
 
             clearTimeout(timeOut);
@@ -55,6 +59,7 @@ const Register = () => {
             setStartTime(5);
             setRemainingTime(10)
             setGameStarting(true);
+            setRegisterTimeUp(true);
             // dispatch(registerParticipantName(participantName));
             // dispatch(goToPage(pages.GAME));
         }
@@ -68,8 +73,8 @@ const Register = () => {
     return (
         <> 
          {!gameStarting && <p>Users waiting in lobby: <b>jax</b> , <b>tia</b></p>}<br></br>
-         {!gameStarting && <h4>You have {remainingTime} seconds left to register.</h4>}
-         {gameStarting && <h4>Lobby complete! Game starting in {startTime} seconds.</h4>}
+         {!registerTimeUp && <h4>You have {remainingTime} seconds left to register.</h4>}
+         {gameStarting && <h4>Registration complete! Game starting in {startTime} seconds.</h4>}
          {!gameStarting && <p>Please enter your username. The length of your username has to be between 2-5 characters.</p>}<br></br>
          {!gameStarting && <input position={"absolute"} left={"50%"} type="text" placeholder="Name" value={participantName} onChange={e => setParticipantName(e.target.value)}/>}
          {!gameStarting && <Button clicked={goToGameHandler}>
