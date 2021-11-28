@@ -33,7 +33,7 @@ const Register = () => {
                 setRegisterTimeUp(true);
             };
             setStartTime(startTime-1);
-            if (startTime===0 && participantName.length >= 2 && participantName.length <= 5) {
+            if (startTime===1 && participantName.length >= 2 && participantName.length <= 5) {
                 dispatch(registerParticipantName(participantName));
                 dispatch(goToPage(pages.GAME));
                 setRegisterTimeUp(true);

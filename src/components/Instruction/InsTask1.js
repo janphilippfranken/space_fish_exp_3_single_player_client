@@ -45,10 +45,10 @@ const InsTask= props => {
                 <ScrollDivision>
               
                 {/* uncomment this for next condition when structure is not known  */}
-                {/* <p>While it will be clear whose judgments you can see, <b>you can’t be sure what the other players can see</b>. That is, you cannot be sure whether player 2 can see player 3's judgments or if player 3 can see player 2's judgments or if either player can see your own judgments. Below is an illustration showing one possibility. Here, Chris can see the judgments of both Neil and Simon. Simon sees Neil's judgment but can't see Chris’. Neil can see neither Chris' nor Simon's judgments.</p><br></br><br></br> */}
+                <p>While it will be clear whose judgments you can see, <b>you can’t be sure what the other players can see</b>. That is, you cannot be sure whether player 2 can see player 3's judgments or if player 3 can see player 2's judgments or if either player can see your own judgments. Below is an illustration showing one possibility. Here, Chris can see the judgments of both Neil and Simon. Simon sees Neil's judgment but can't see Chris’. Neil can see neither Chris' nor Simon's judgments.</p><br></br><br></br>
 
                 {/* hide this for next condition when structure is not known  */}
-                <p>In addition to seeing other players' judgments yourself, <b>you will be able to see which judgments the other players can see</b> during the game. That is, you will know whether player 2 can see player 3's judgments or if player 3 can see player 2's judgments or if either player can see your own judgments. Below is an illustration showing one possibility. Here, Chris can see the judgments of both Neil and Simon. Simon sees Neil's judgment but can't see Chris’. Neil can see neither Chris' nor Simon's judgments.</p><br></br><br></br>
+                {/* <p>In addition to seeing other players' judgments yourself, <b>you will be able to see which judgments the other players can see</b> during the game. That is, you will know whether player 2 can see player 3's judgments or if player 3 can see player 2's judgments or if either player can see your own judgments. Below is an illustration showing one possibility. Here, Chris can see the judgments of both Neil and Simon. Simon sees Neil's judgment but can't see Chris’. Neil can see neither Chris' nor Simon's judgments.</p><br></br><br></br> */}
                 
                 
                 <img src={structureImage} alt="subj_cooking"/>
@@ -57,7 +57,7 @@ const InsTask= props => {
 
 
                 {/* uncomment this for unknown structure */}
-                {/* <p>NOTE: In the main task, you will need to <b>infer who can see whose judgments</b> and we will ask you to make a selection for each of the possible relationships at the end.</p> */}
+                <p>NOTE: In the main task, you will need to <b>infer who can see whose judgments</b> and we will ask you to make a selection for each of the possible relationships at the end.</p>
 
                 {/* <p>To give the correct salt advice for cooking, you need to <b>decide</b> whether the space station's fish comes from the RED or BLUE planet. You will team up with <b>two</b> other players to help the crew.</p><br></br>
 

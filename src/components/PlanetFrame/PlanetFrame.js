@@ -397,9 +397,10 @@ const PlanetFrame = props => {
                 room.planetSelections[bKey][trial] &&
                 room.planetSelections[cKey][trial]) {
 
-                if (room.planetSelections[aKey][10] &&
-                    room.planetSelections[bKey][10] &&
-                    room.planetSelections[cKey][10]) {
+                if (room.planetSelections[aKey][10]) 
+                    // room.planetSelections[bKey][10] &&
+                    // room.planetSelections[cKey][10])
+                    {
                     
                     // if (conditionNumber === 2) {
                     //     return dispatch(goToPage(pages.DEBRIEF));
@@ -501,14 +502,14 @@ const PlanetFrame = props => {
         setSimulatedResponse(false);
         if (checkScoreDisplays(9) == true) {
             // if condition is structure known:
-            dispatch(goToPage(pages.DEBRIEF));
+            // dispatch(goToPage(pages.DEBRIEF));
             // if not known activate all of these again!
-            // setShowStructure(true);
-            // setRemainingTime(120);
-            // setShowPrivate(false);
-            // setBeforeSelect('none');
-            // setAfterSelect('none');
-            // structureDelayFunc();
+            setShowStructure(true);
+            setRemainingTime(120);
+            setShowPrivate(false);
+            setBeforeSelect('none');
+            setAfterSelect('none');
+            structureDelayFunc();
             // console.log('h');
             return false;
         }
@@ -565,7 +566,7 @@ const PlanetFrame = props => {
             <Agent display={beforeSelect === ''? '' : 'none'} top={"82%"} left={'7%'} width={'35rem'} agent_id="instr_frame_bonus" >Remember, the planet stays the same for the whole game but you may see more evidence about it over time. Also remember, you receive a bonus every time you make a judgment in the correct direction.</Agent> 
             <Agent display={checkSelectedScore(thisParticipant.id) === "wait" && afterSelect ===''? showScore : scoreDisplays[0]} left={'7%'} width={'35rem'} agent_id="instr_frame" >WAITING FOR OTHER PLAYERS...</Agent>
             <Agent display={checkSelectedScore(thisParticipant.id) === true && afterSelect ==='' && checkScoreDisplays(9) === 'wait'? showScore : scoreDisplays[0]} left={'7%'} width={'35rem'} agent_id="instr_frame" >COMPLETE! LOADING NEXT ROUND...</Agent>
-            <Agent display={checkSelectedScore(thisParticipant.id) === true && afterSelect ==='' && checkScoreDisplays(9) === true? showScore : scoreDisplays[0]} left={'7%'} width={'35rem'} agent_id="instr_frame" >COMPLETE! LOADING DEBRIEFING...</Agent>
+            <Agent display={checkSelectedScore(thisParticipant.id) === true && afterSelect ==='' && checkScoreDisplays(9) === true? showScore : scoreDisplays[0]} left={'7%'} width={'35rem'} agent_id="instr_frame" >COMPLETE! LOADING...</Agent>
             <Agent display={showStructure && room.planetSelections[thisParticipant.id].length != 11 && inTime? '' : 'none'} left={'7%'} width={'35rem'} agent_id="instr_frame" >Who sees whose judgments?</Agent>
             {/* <Agent display={showStructure && room.planetSelections[thisParticipant.id].length != 11 && inTime? '' : 'none'} left={'7%'} width={'35rem'} agent_id="instr_frame_2" >(i.e. )</Agent> */}
             <Agent display={showStructure && room.planetSelections[thisParticipant.id].length != 11 && inTime? '' : 'none'} left={'7%'} width={'35rem'} agent_id="instr_frame_2" >(tick ❌ or ✔ for each of the four remaining relationships)</Agent>
