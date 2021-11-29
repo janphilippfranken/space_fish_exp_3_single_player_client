@@ -35,8 +35,35 @@
 .Down3 {
     position: absolute;
     transform: rotate(150deg);
-    transform: rotate(-150deg);
+    transform: rotate(-145deg);
+
+    border-top: 0.5rem solid transparent;
+    border-right: 1.4rem solid green;
+    border-bottom: 0.5rem solid transparent;    
 }
+
+.Down4 {
+    position: absolute;
+    transform: rotate(150deg);
+    transform: rotate(-35deg);
+  
+  
+    border-top: 0.5rem solid transparent;
+    border-right: 1.4rem solid green;
+    border-bottom: 0.5rem solid transparent;   
+}
+
+.Down5 {
+    position: absolute;
+    transform: rotate(140deg);
+    transform: rotate(-17deg);
+  
+  
+    border-top: 0.5rem solid transparent;
+    border-right: 1.4rem solid green;
+    border-bottom: 0.5rem solid transparent;    
+}
+
 
 
 .Up1 {

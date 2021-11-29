@@ -721,7 +721,7 @@
     left:13%; 
     height: 0.5rem;
     width: 14rem;
-    background-color:grey;
+    background-color:green;
     border: 5px solid black;
     border-radius: 5px;
     box-shadow: 0px 0px 0px #888;
@@ -741,7 +741,7 @@
     left:13%; 
     height: 0.5rem;
     width: 14rem;
-    background-color:grey;
+    background-color:green;
     border: 5px solid black;
     border-radius: 5px;
     box-shadow: 0px 0px 0px #888;
@@ -761,7 +761,7 @@
     left:13%; 
     height: 0.5rem;
     width: 14rem;
-    background-color:grey;
+    background-color:green;
     border: 5px solid black;
     border-radius: 5px;
     box-shadow: 0px 0px 0px #888;
@@ -819,10 +819,10 @@
     opacity: 0.5;
     position: absolute;
     left:13%; 
-    height: 0.5rem;
-    width: 14rem;
-    background-color:grey;
-    border: 5px solid black;
+    height: 0.2rem;
+    width: 1rem;
+    background-color:green;
+    border: 1.5px solid black;
     border-radius: 5px;
     box-shadow: 0px 0px 0px #888;
     font: 8px Arial, sans-serif;
@@ -832,5 +832,65 @@
     display: flex;
     justify-content: center;
     transform: rotateY(0deg) rotate(30deg);
+    align-items: center;
+}
+
+.ConnectionTail5Mini {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 0.2rem;
+    width: 1rem;
+    background-color:green;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 8px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(150deg);
+    align-items: center;
+}
+
+.ConnectionTail6Mini {
+    opacity: 0.5;
+    position: absolute;
+    left:13%; 
+    height: 0.2rem;
+    width: 5rem;
+    background-color:green;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #888;
+    font: 8px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(166deg);
+    align-items: center;
+}
+
+.Border {
+    opacity: 0.5;
+    position: absolute;
+    left:1%; 
+    height: 16rem;
+    width: 5rem;
+    background-color:transparent;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px #888;
+    font: 5px Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0deg) rotate(90deg);
     align-items: center;
 }

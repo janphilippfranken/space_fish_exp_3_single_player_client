@@ -85,13 +85,16 @@ const GameInterface = props => {
     return (
         <div className={classes.GameInterface}>
         <div className={classes.GameForm}>
-            <h3>{conditionData.title}</h3>
+            <h3>{conditionData.title}</h3> 
             <hr />
-            
             <div display={"none"} className={classes.GameContainerStructure}>
                 <StructureFrameMini display={thisParticipant.structureHint === 'strong'? planetDisplay : 'none'} ></StructureFrameMini> 
                 {/* <StructureFrameMini display={""} ></StructureFrameMini> */}
             </div> 
+            {/* <div display={"none"} className={classes.GameContainerStructure}>
+                <StructureFrameMini display={thisParticipant.structureHint === 'strong'? planetDisplay : 'none'} ></StructureFrameMini> 
+                {/* <StructureFrameMini display={""} ></StructureFrameMini> */}
+            {/* </div>   */}
             {/* <div className={classes.ParagraphContainer}> */}
             <div className={classes.GameContainer}>
                 
