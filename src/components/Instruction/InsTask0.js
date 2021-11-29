@@ -53,12 +53,12 @@ const InsTask= props => {
                 {/* <p>After each fishing attempt you and the the other two players will update your judgments about which planet you are all at. You will be able to see the judgments of both the other players.</p><br></br> */}
                 {/* <p><b></b>While it will be clear whose signals you can see, <b>you can’t be sure what the other players can see</b>. That is, you cannot be sure whether player 2 can see player 3's judgments or if player 3 can see player 2's judgments or if either player can see your own judgments. Below is an illustration showing one possibility. Here, Chris can see the judgments of both Neil and Simon. Simon sees Neil's judgment but can't see Chris’. Neil can see neither Chris' nor Simon's judgments.</p><br></br><br></br> */}
 
-                {/* <p>In addition to seeing other players' judgments yourself, <b>you also know what the other players can see</b>. That is, you will know whether player 2 can see player 3's judgments or if player 3 can see player 2's judgments or if either player can see your own judgments. Below is an illustration showing one possibility. Here, Chris can see the judgments of both Neil and Simon. Simon sees Neil's judgment but can't see Chris’. Neil can see neither Chris' nor Simon's judgments.</p><br></br><br></br>
+                {/* <p>In addition to seeing other players' judgments yourself, <b>you also know what the other players can see</b>. That is, you will know whether player 2 can see player 3's judgments or if player 3 can see player 2's judgments or if either player can see your own judgments. Below is an illustration showing one possibility. Here, Chris can see the judgments of both Neil and Simon. Simon sees Neil's judgment but can't see Chris’. Neil can see neither Chris' nor Simon's judgments.</p><br></br><br></br> */}
                 
-                
+{/*                 
                 <img src={structureImage} alt="subj_cooking"/>
 
-                <p>At the end of the game, we will ask you to make a selection for each of the possible relationships.</p> */}
+                <p>At the end of the game, we will ask you to make a selection for each of the possible relationships.</p> */} 
 
                 {/* <p>To give the correct salt advice for cooking, you need to <b>decide</b> whether the space station's fish comes from the RED or BLUE planet. You will team up with <b>two</b> other players to help the crew.</p><br></br>
 
