@@ -100,13 +100,13 @@ const StructureFrameMini = props => {
     return (
         <div className={classes.StructureFrame} style={{display: props.display}}>
             {/* game interface */}
-            <Agent top={"5%"} left={"-190%"} agent_id="FishInstruct"><b>You can see the judgments of both Jax and Tia.</b></Agent>
-            <Agent top={"15%"} left={"-190%"} agent_id="FishInstruct"><b>Tia sees Jax's judgments but can't see your judgments.</b></Agent>
-            <Agent top={"25%"} left={"-190%"} agent_id="FishInstruct"><b>Jax can not see any judgments from other players.</b></Agent>
+            <Agent top={"5%"} left={"-190%"} agent_id="FishInstruct">You can see the <b>previous</b> judgments of both Jax and Tia.</Agent>
+            <Agent top={"15%"} left={"-190%"} agent_id="FishInstruct">Tia can see Jax’s <b>previous</b> judgments but can’t see your judgments.</Agent>
+            <Agent top={"25%"} left={"-190%"} agent_id="FishInstruct">Jax can not see any judgments from other players.</Agent>
 
            
 
-            <Agent top={"0%"} left={"-5%"} agent_id="FishInstruct"><b>Judgments seen by each player</b>:</Agent>
+            <Agent top={"0%"} left={"-15%"} agent_id="FishInstruct">Judgment transmissions between players:</Agent>
             
 
             {/* agents pos top you first left second right 

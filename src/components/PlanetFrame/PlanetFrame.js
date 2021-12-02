@@ -739,6 +739,64 @@ const PlanetFrame = props => {
             <Agent display={checkScoreDisplays(8) === true && checkScoreDisplays(9) === 'wait'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="Border" top={"49%"} left={'81%'} width={'3rem'}></Agent> 
             <Agent display={checkScoreDisplays(9) === true && checkScoreDisplays(10) === 'wait'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="Border" top={"57%"} left={'81%'} width={'3rem'}></Agent> 
            
+            
+            {/* BA */}
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail5Mini" top={"11.3%"} left={'76.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"23.5%"} left={'76%'}> </MiniArrows>
+            
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail5Mini" top={"19.3%"} left={'76.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"31.5%"} left={'75.9%'}> </MiniArrows>
+             
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail5Mini" top={"27.3%"} left={'76.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"39.5%"} left={'75.9%'}> </MiniArrows>
+             
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail5Mini" top={"35.3%"} left={'76.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"47.5%"} left={'75.9%'}> </MiniArrows>
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail5Mini" top={"43.3%"} left={'76.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"55.5%"} left={'75.9%'}> </MiniArrows>
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail5Mini" top={"51.3%"} left={'76.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"63.5%"} left={'75.9%'}> </MiniArrows>
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail5Mini" top={"59.3%"} left={'76.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"71.5%"} left={'75.9%'}> </MiniArrows>
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail5Mini" top={"67.3%"} left={'76.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"79.6%"} left={'75.9%'}> </MiniArrows>
+ 
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail5Mini" top={"75.3%"} left={'76.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"87.6%"} left={'75.9%'}> </MiniArrows>
+
+            {/* AC */}
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail6Mini" top={"12.7%"} left={'76%'} width={'10rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down6" top={"26.1%"} left={'75.8%'}> </MiniArrows>
+             
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail6Mini" top={"20.7%"} left={'76%'} width={'10rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down6" top={"34.1%"} left={'75.8%'}> </MiniArrows>
+             
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail6Mini" top={"28.7%"} left={'76%'} width={'10rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down6" top={"42.1%"} left={'75.8%'}> </MiniArrows>
+             
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail6Mini" top={"36.7%"} left={'76%'} width={'10rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down6" top={"50.2%"} left={'75.8%'}> </MiniArrows>
+             
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail6Mini" top={"44.7%"} left={'76%'} width={'10rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down6" top={"58.1%"} left={'75.8%'}> </MiniArrows>
+
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail6Mini" top={"52.7%"} left={'76%'} width={'10rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down6" top={"66.1%"} left={'75.8%'}> </MiniArrows>
+            
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail6Mini" top={"60.7%"} left={'76%'} width={'10rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down6" top={"74.1%"} left={'75.8%'}> </MiniArrows>
+            
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail6Mini" top={"68.7%"} left={'76%'} width={'10rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down6" top={"82.2%"} left={'75.8%'}> </MiniArrows>
+           
+            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"grey"}  agent_id="ConnectionTail6Mini" top={"76.7%"} left={'76%'} width={'10rem'}></Agent> 
+            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down6" top={"90.3%"} left={'75.8%'}> </MiniArrows>
+
+
             {/* displaying agent connections per trial in third experiment - these are fixe positions as we do not randomise position anymore. they are only shown in the strong structure manipulation */}
             {/* BC */}
             <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"11.3%"} left={'85%'} width={'3rem'}></Agent> 
@@ -767,63 +825,6 @@ const PlanetFrame = props => {
 
             <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail4Mini" top={"75.3%"} left={'85%'} width={'3rem'}></Agent> 
             <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down3" top={"87.5%"} left={'87.9%'}> </MiniArrows> 
-
-            {/* BA */}
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail5Mini" top={"11.3%"} left={'76.5%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"23.5%"} left={'76%'}> </MiniArrows>
-            
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail5Mini" top={"19.3%"} left={'76.5%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"31.5%"} left={'75.9%'}> </MiniArrows>
-             
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail5Mini" top={"27.3%"} left={'76.5%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"39.5%"} left={'75.9%'}> </MiniArrows>
-             
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail5Mini" top={"35.3%"} left={'76.5%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"47.5%"} left={'75.9%'}> </MiniArrows>
-
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail5Mini" top={"43.3%"} left={'76.5%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"55.5%"} left={'75.9%'}> </MiniArrows>
-
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail5Mini" top={"51.3%"} left={'76.5%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"63.5%"} left={'75.9%'}> </MiniArrows>
-
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail5Mini" top={"59.3%"} left={'76.5%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"71.5%"} left={'75.9%'}> </MiniArrows>
-
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail5Mini" top={"67.3%"} left={'76.5%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"79.5%"} left={'75.9%'}> </MiniArrows>
- 
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail5Mini" top={"75.3%"} left={'76.5%'} width={'3rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down4" top={"87.5%"} left={'75.9%'}> </MiniArrows>
-
-            {/* AC */}
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail6Mini" top={"12.7%"} left={'76%'} width={'10rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(1) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down5" top={"26.1%"} left={'75.8%'}> </MiniArrows>
-             
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail6Mini" top={"20.7%"} left={'76%'} width={'10rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(2) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down5" top={"34.1%"} left={'75.8%'}> </MiniArrows>
-             
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail6Mini" top={"28.7%"} left={'76%'} width={'10rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(3) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down5" top={"42.1%"} left={'75.8%'}> </MiniArrows>
-             
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail6Mini" top={"36.7%"} left={'76%'} width={'10rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(4) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down5" top={"50.1%"} left={'75.8%'}> </MiniArrows>
-             
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail6Mini" top={"44.7%"} left={'76%'} width={'10rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(5) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down5" top={"58.1%"} left={'75.8%'}> </MiniArrows>
-
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail6Mini" top={"52.7%"} left={'76%'} width={'10rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(6) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down5" top={"66.1%"} left={'75.8%'}> </MiniArrows>
-            
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail6Mini" top={"60.7%"} left={'76%'} width={'10rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(7) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down5" top={"74.1%"} left={'75.8%'}> </MiniArrows>
-            
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail6Mini" top={"68.7%"} left={'76%'} width={'10rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(8) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down5" top={"82.1%"} left={'75.8%'}> </MiniArrows>
-           
-            <Agent display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '' : 'none'} opacity={"1.0"}  borderColor={"green"}  agent_id="ConnectionTail6Mini" top={"76.7%"} left={'76%'} width={'10rem'}></Agent> 
-            <MiniArrows display={thisParticipant.condition === "lr" && checkScoreDisplays(9) === true && thisParticipant.structureHint === 'strong'? '': 'none'} arrow_id="Down5" top={"90.1%"} left={'75.8%'}> </MiniArrows>
-
 
 
 

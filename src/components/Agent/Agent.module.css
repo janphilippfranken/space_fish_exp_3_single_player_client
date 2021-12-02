@@ -841,7 +841,7 @@
     left:13%; 
     height: 0.2rem;
     width: 1rem;
-    background-color:green;
+    background-color:grey;
     border: 1.5px solid black;
     border-radius: 5px;
     box-shadow: 0px 0px 0px #888;
@@ -861,7 +861,8 @@
     left:13%; 
     height: 0.2rem;
     width: 5rem;
-    background-color:green;
+    background-color:grey;
+    color: grey;
     border: 1.5px solid black;
     border-radius: 5px;
     box-shadow: 0px 0px 0px #888;
