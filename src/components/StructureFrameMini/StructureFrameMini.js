@@ -100,13 +100,15 @@ const StructureFrameMini = props => {
     return (
         <div className={classes.StructureFrame} style={{display: props.display}}>
             {/* game interface */}
-            <Agent top={"5%"} left={"-190%"} agent_id="FishInstruct">You should consider the <b>previous</b> judgments of both Jax and Tia and your own catches.</Agent>
-            <Agent top={"15%"} left={"-190%"} agent_id="FishInstruct"><b>Tia <i>always</i></b>  considers both <b>Jax’s previous judgments <i>and</i> her own catches</b> to make judgments.</Agent>
-            <Agent top={"25%"} left={"-190%"} agent_id="FishInstruct"><b>Jax can not</b> see any judgments from others and <b><i>only</i> uses his own catches</b> to make judgments.</Agent>
+            <Agent top={"0%"} left={"-190%"} agent_id="FishInstruct">You should consider the <b>previous</b> judgments of both Jax and Tia and your own catches.</Agent>
+            <Agent top={"10%"} left={"-190%"} agent_id="FishInstruct"><b>IMPORTANT</b>: <b>Tia <i>always</i></b> considers both <b>Jax’s previous judgments <i>and</i> her own catches</b>.</Agent>
+            <Agent top={"20%"} left={"-190%"} agent_id="FishInstruct">This means that even if <b>Tia</b> is <b><u>LESS CONFIDENT</u></b> than Jax, she <b><u>KNOWS MORE</u></b> about the planet than Jax.</Agent>
+            {/* <Agent top={"30%"} left={"-190%"} agent_id="FishInstruct"><b>IMPORTANT</b>: Even if Tia is less confident than Jax, this does not mean that she caught fewer fish.</Agent> */}
+            {/* <Agent top={"30%"} left={"-190%"} agent_id="FishInstruct"><b>Jax can not</b> see any judgments from others and <b><i>only</i> uses his own catches</b> to make judgments.</Agent> */}
 
            
 
-            <Agent top={"0%"} left={"-15%"} agent_id="FishInstruct">Judgment exchanges between players:</Agent>
+            <Agent top={"0%"} left={"-1%"} agent_id="FishInstruct">Judgment exchanges between players:</Agent>
             
 
             {/* agents pos top you first left second right 
@@ -116,9 +118,9 @@ const StructureFrameMini = props => {
 
 
             {/* new order of the above for third exp */} 
-            <Agent display={beforeSelect? '' : 'none'} agent_id="Mini" top={"27%"} left={'0%'}>{playerNames[thisParticipant.stimuli][0]} (you)</Agent>
-            <Agent display={beforeSelect? '' : 'none'} agent_id="Mini" top={"5%"} left={'15%'}>{playerPos[currSubjId][0] > playerPos[currSubjId][1]? playerNames[thisParticipant.stimuli][2] : playerNames[thisParticipant.stimuli][1]}</Agent>
-            <Agent display={beforeSelect? '' : 'none'} agent_id="Mini" top={"27%"} left={'30%'}>{playerPos[currSubjId][0] > playerPos[currSubjId][1]? playerNames[thisParticipant.stimuli][1] : playerNames[thisParticipant.stimuli][2]}</Agent>
+            <Agent display={beforeSelect? '' : 'none'} agent_id="Mini" top={"27%"} left={'5%'}>{playerNames[thisParticipant.stimuli][0]} (you)</Agent>
+            <Agent display={beforeSelect? '' : 'none'} agent_id="Mini" top={"5%"} left={'20%'}>{playerPos[currSubjId][0] > playerPos[currSubjId][1]? playerNames[thisParticipant.stimuli][2] : playerNames[thisParticipant.stimuli][1]}</Agent>
+            <Agent display={beforeSelect? '' : 'none'} agent_id="Mini" top={"27%"} left={'35%'}>{playerPos[currSubjId][0] > playerPos[currSubjId][1]? playerNames[thisParticipant.stimuli][1] : playerNames[thisParticipant.stimuli][2]}</Agent>
 
 
             {/* for order in which earlier agent is on left  */}
@@ -142,19 +144,19 @@ const StructureFrameMini = props => {
            
             {/* now for exp 3 always fixed structure with one one left and two on top and 3 right */}
             {/* First Pair  */}
-            <Agent display={playerPos[currSubjId][0] < playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject1' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject2' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject3'? '' : 'none'} opacity={"1.0"}  borderColor={thisParticipant.stimuli === 'subject2' || thisParticipant.stimuli === 'subject3'? 'green' : "green"}  agent_id="ConnectionTail1Mini" top={"25%"} left={'9%'} width={'3rem'}></Agent> 
-            <MiniArrows display={''} arrow_id="Down1" top={"49%"} left={'8.5%'}> </MiniArrows>
+            <Agent display={playerPos[currSubjId][0] < playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject1' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject2' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject3'? '' : 'none'} opacity={"1.0"}  borderColor={thisParticipant.stimuli === 'subject2' || thisParticipant.stimuli === 'subject3'? 'green' : "green"}  agent_id="ConnectionTail1Mini" top={"25%"} left={'14%'} width={'3rem'}></Agent> 
+            <MiniArrows display={''} arrow_id="Down1" top={"49%"} left={'13.5%'}> </MiniArrows>
             {/* <MiniArrows display={playerPos[currSubjId][0] < playerPos[currSubjId][1] && beforeSelect && thisParticipant.stimuli === 'subject1'? '' : 'none'} arrow_id="Up1" top={"38%"} left={'15.8%'}> </MiniArrows> */}
              {/* Connections */}
             {/* Second Pair  */}
-            <Agent display={playerPos[currSubjId][0] < playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject1' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject2' && thisParticipant.condition === 'lr' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject3' && thisParticipant.condition === 'lr'? '' : 'none'} opacity={"1.0"}  borderColor={thisParticipant.stimuli === 'subject1'? 'green' : "green"} agent_id="ConnectionTail2Mini" top={"25%"} left={'24.5%'} width={'3rem'}></Agent> 
-            <MiniArrows display={''} arrow_id="Down2" top={"49%"} left={'31.5%'}></MiniArrows> 
+            <Agent display={playerPos[currSubjId][0] < playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject1' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject2' && thisParticipant.condition === 'lr' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject3' && thisParticipant.condition === 'lr'? '' : 'none'} opacity={"1.0"}  borderColor={thisParticipant.stimuli === 'subject1'? 'green' : "green"} agent_id="ConnectionTail2Mini" top={"25%"} left={'29.5%'} width={'3rem'}></Agent> 
+            <MiniArrows display={''} arrow_id="Down2" top={"49%"} left={'36.5%'}></MiniArrows> 
             {/* <MiniArrows display={playerPos[currSubjId][0] < playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject1' || playerPos[currSubjId][0] < playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject3' && thisParticipant.condition === "lr"? '' : 'none'} arrow_id="Up2" top={"38%"} left={'23.5%'}> </MiniArrows> */}
             {/* Connections */}
             {/* Third Pair  */}
-            <Agent display={playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject1' && thisParticipant.condition === 'lr' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject2' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject3'? '' : 'none'} opacity={"1.0"} borderColor={"green"}  agent_id="ConnectionTail3Mini" top={"35.5%"} left={'19%'} width={'3rem'}></Agent> 
+            <Agent display={playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject1' && thisParticipant.condition === 'lr' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject2' || playerPos[currSubjId][0] < playerPos[currSubjId][1] && thisParticipant.stimuli === 'subject3'? '' : 'none'} opacity={"1.0"} borderColor={"green"}  agent_id="ConnectionTail3Mini" top={"35.5%"} left={'24%'} width={'3rem'}></Agent> 
             {/* <MiniArrows display={playerPos[currSubjId][0] < playerPos[currSubjId][1] &&  thisParticipant.stimuli === 'subject1' && thisParticipant.condition === 'lr'? '' : 'none'} arrow_id="Right" top={"54.3%"} left={'26%'}> </MiniArrows>  */}
-            <MiniArrows display={''} arrow_id="Left" top={"53.8%"} left={'15%'}> </MiniArrows> 
+            <MiniArrows display={''} arrow_id="Left" top={"53.8%"} left={'20%'}> </MiniArrows> 
             
 
             {/*  now more efficient code */}
