@@ -101,8 +101,8 @@ const StructureFrameMini = props => {
         <div className={classes.StructureFrame} style={{display: props.display}}>
             {/* game interface */}
             <Agent top={"0%"} left={"-190%"} agent_id="FishInstruct">You should consider the <b>previous</b> judgments of both Jax and Tia and your own catches.</Agent>
-            <Agent top={"10%"} left={"-190%"} agent_id="FishInstruct"><b>IMPORTANT</b>: <b>Tia <i>always</i></b> considers both <b>Jax’s previous judgments <i>and</i> her own catches</b>.</Agent>
-            <Agent top={"20%"} left={"-190%"} agent_id="FishInstruct">This means that even if <b>Tia</b> is <b><u>LESS CONFIDENT</u></b> than Jax, she <b><u>KNOWS MORE</u></b> about the planet than Jax.</Agent>
+            <Agent top={"10%"} left={"-190%"} agent_id="FishInstruct">IMPORTANT: <b>Tia <i>always</i></b> considers both <b>Jax’s previous judgments <i>and</i> her own catches</b>.</Agent>
+            <Agent top={"20%"} left={"-190%"} agent_id="FishInstruct">This means that <b>Tia</b>'s judgments are <b><u>MORE INFORMATIVE</u></b> than Jax's, even when she is less confident.</Agent>
             {/* <Agent top={"30%"} left={"-190%"} agent_id="FishInstruct"><b>IMPORTANT</b>: Even if Tia is less confident than Jax, this does not mean that she caught fewer fish.</Agent> */}
             {/* <Agent top={"30%"} left={"-190%"} agent_id="FishInstruct"><b>Jax can not</b> see any judgments from others and <b><i>only</i> uses his own catches</b> to make judgments.</Agent> */}
 
