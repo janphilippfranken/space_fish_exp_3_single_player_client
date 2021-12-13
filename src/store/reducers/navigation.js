@@ -4,7 +4,6 @@ const initialState = {
     currentPage: pages.ETHICS
 };
 
-
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case GO_TO_PAGE:

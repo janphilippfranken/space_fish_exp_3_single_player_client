@@ -100,7 +100,10 @@ const InsQuiz = props => {
                     <li className={Classes.Q2}>2. You and two other players are fishing at the same planet (either on Planet RED or on Planet BLUE).</li>
                     <li className={Classes.Q3}>3. One of you already knows at the start which planet you are fishing on.</li>
                     <li className={Classes.Q4}>4. You can’t see the other players' catches directly, so you can only know which planet you are at by looking at whatever fish you catch yourself and any judgments you might see from the other players.</li>
-                    <li className={Classes.Q5}>5. You can directly see <b>whether the other players can see each other's judgments and if they can see your own judgments</b>. You <b>should consider</b> this knowledge when updating your own judgments.</li>
+                    {/* <li className={Classes.Q5}>5. You can directly see <b>whether the other players can see each other's judgments and if they can see your own judgments</b>. You <b>should consider</b> this knowledge when updating your own judgments.</li> */}
+                    <li className={Classes.Q5}>5. You can’t be sure if the other players are seeing each other's judgments or if they can see your judgments.</li>
+                    
+                    
                     <li className={Classes.Q6}>6. You need to consider current and past evidence (your own fish <b>and</b> other players' judgments) when making a new judgment. You will be paid £0.15 bonus for selecting the correct planet in each round (max. total bonus = £1.50).</li>
                      {/*<b>DEV::STRUCTURE UNKNOWN</b>You can’t be sure if the other players are seeing each other's judgments or if they can see your judgments. You will need to <b>infer who sees whose judgments</b> by looking at how other players' judgments change over time */}
                      {/* You can directly see <b>whether the other players can see each other's judgments and if they can see your own judgments</b>. You <b>should consider</b> this knowledge when updating your own judgments.<br></br><br></br></li> */}

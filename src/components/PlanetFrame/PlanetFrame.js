@@ -502,15 +502,15 @@ const PlanetFrame = props => {
         setSimulatedResponse(false);
         if (checkScoreDisplays(9) == true) {
             // if condition is structure known:
-            dispatch(goToPage(pages.DEBRIEF));
+            // dispatch(goToPage(pages.DEBRIEF));
             // if not known activate all of these again!
-            // setShowStructure(true);
-            // setRemainingTime(120);
-            // setShowPrivate(false);
-            // setBeforeSelect('none');
-            // setAfterSelect('none');
-            // structureDelayFunc();
-            // console.log('h');
+            setShowStructure(true);
+            setRemainingTime(120);
+            setShowPrivate(false);
+            setBeforeSelect('none');
+            setAfterSelect('none');
+            structureDelayFunc();
+            console.log('h');
             return false;
         }
         const timeOut1 = setTimeout(() => {
