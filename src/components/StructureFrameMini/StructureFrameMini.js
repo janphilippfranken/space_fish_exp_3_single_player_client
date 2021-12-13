@@ -100,13 +100,13 @@ const StructureFrameMini = props => {
     return (
         <div className={classes.StructureFrame} style={{display: props.display}}>
             {/* game interface */}
-            <Agent top={"5%"} left={"-190%"} agent_id="FishInstruct">You can see the <b>previous</b> judgments of both Jax and Tia.</Agent>
-            <Agent top={"15%"} left={"-190%"} agent_id="FishInstruct">Tia can see Jax’s <b>previous</b> judgments but can’t see your judgments.</Agent>
-            <Agent top={"25%"} left={"-190%"} agent_id="FishInstruct">Jax can not see any judgments from other players.</Agent>
+            <Agent top={"5%"} left={"-190%"} agent_id="FishInstruct">You should consider the <b>previous</b> judgments of both Jax and Tia and your own catches.</Agent>
+            <Agent top={"15%"} left={"-190%"} agent_id="FishInstruct"><b>Tia <i>always</i></b>  considers both <b>Jax’s previous judgments <i>and</i> her own catches</b> to make judgments.</Agent>
+            <Agent top={"25%"} left={"-190%"} agent_id="FishInstruct"><b>Jax can not</b> see any judgments from others and <b><i>only</i> uses his own catches</b> to make judgments.</Agent>
 
            
 
-            <Agent top={"0%"} left={"-15%"} agent_id="FishInstruct">Judgment transmissions between players:</Agent>
+            <Agent top={"0%"} left={"-15%"} agent_id="FishInstruct">Judgment exchanges between players:</Agent>
             
 
             {/* agents pos top you first left second right 

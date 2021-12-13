@@ -46,7 +46,7 @@ const InsTask= props => {
                 <p>You and two other players (other participants) have gone fishing at either planet RED or planet BLUE. However, after getting lost in hyperspace, <b>none of you have any idea which planet you are at</b>!</p><br></br>
                 {/* <img src={visitImage} alt="planet_visit"/> */}
 
-                <p><b>Your job is to work out which planet you are at over the course of your fishing trip</b>. To do this you will need to pay attention to whatever fish you catch yourself (you will get 10 attempts to fish) but you may also be able to draw on the judgments of one or both the other players.</p><br></br>
+                <p><b>Your job is to work out which planet you are at over the course of your fishing trip</b>. To do this you will need to pay attention to whatever fish you catch yourself (you will get 10 attempts to fish) and you will also be able to draw on the judgments both the other players.</p><br></br>
 
 
                 {/* <p>After each fishing attempt you and the the other two players will update your judgments about which planet you are all at. You may or may not be able to see the judgments of one or both the other players.</p><br></br> */}

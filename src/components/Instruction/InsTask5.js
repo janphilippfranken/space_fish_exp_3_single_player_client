@@ -179,7 +179,7 @@ const InsTask= props => {
     const [showButton3, setShowButton3] = useState('none');
     const [showScale, setShowScale] = useState('none');
     const [checkFishText, setCheckFishText] = useState('Finish Training');
-    const [initText, setInitText] = useState("Simon could see Jim's judgment from the first round (3: highly confident RED) when providing his judgment (2: moderately confident RED) in round two. Jim could not see Simon's judgment from the first round.");
+    const [initText, setInitText] = useState("Simon could see Jim's judgment from the first round (3: highly confident RED) when providing his judgment (1: slightly confident RED) in round two. Jim could not see Simon's judgment from the first round.");
     const [labelDisplay, setLabelDisplay] = useState('');
     const [textDisplay, setTextDisplay] = useState('');
 
@@ -255,7 +255,7 @@ const InsTask= props => {
                 <Scores display={training_clicks === 0? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-9%'} left={'17%'}  >{3}</Scores> 
                 
                 {/* second example */}
-                <Scores display={training_clicks === 0? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'10%'} left={'48%'}  >{2}</Scores> 
+                <Scores display={training_clicks === 0? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'10%'} left={'48%'}  >{1}</Scores> 
                 <Scores display={training_clicks === 0? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'10%'} left={'17%'}  >{3}</Scores> 
                 
                 {/*  example edge from jim to simon */}

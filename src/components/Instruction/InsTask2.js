@@ -62,13 +62,15 @@ const InsTask= props => {
                 <p>In each of the 10 'rounds' you will:</p><br></br>
                 <ol>
                     <li>1. Check to see if you caught a fish, and what colour it is if you did.</li><br></br>
-                    <li>2. Provide a <b>judgment about which planet you are at using the response format below</b>. You can earn a bonus of £0.15 for selecting the correct planet on each judgment.</li>
+                    <li>2. Provide a <b>judgment about which planet you are at using the response format below</b>.</li>
                     <img src={confImage} alt="conf"/><br></br><br></br>
-                    <li>3. Potentially see the judgments of the other players. Like your own judgments these will range between 'Highly confident RED' and 'Highly confident BLUE' (see below). Please <b>consider current and past evidence</b> (fish / players' judgments) when making a judgment.</li>
+                    <li>3. See the judgments of the other players. Like your own judgments these will range between 'Highly confident RED' and 'Highly confident BLUE' (see below). <b><i>Always</i> consider current and past evidence</b> (fish / other players' judgments) when making a new judgment.</li>
                     <img src={observeAll} alt="others"/><br></br>
-                    <li>In some cases, you might only see some or none of the other players' judgments:</li>
-                    <img src={observeOne} alt="others"/><br></br>
-                    <li>NOTE: You <b>can never</b> see other players’ catches. You can only see your own catches and other players’ judgments to revise your own judgments. However, like you, the other players get bonuses for guessing correctly on each round.</li>
+
+                    <li><b>You will earn a bonus of £0.15 for selecting the correct planet in each round. To select the correct planet, you need to consider <i>both</i> other players' judgments and your own fish.</b></li><br></br>
+                    {/* <li>In some cases, you might only see some or none of the other players' judgments:</li> */}
+                    {/* <img src={observeOne} alt="others"/><br></br> */}
+                    <li>NOTE: You <b>can never</b> see other players’ catches. You can only see your own catches and other players’ judgments to revise your own judgments. Other players <b>always</b> provide accurate judgments, as they also get bonuses for guessing correctly in each round.</li>
                     {/* <p>Remember: These are other players and they may use these signals however they like!</p><br></br> */}
 
                 </ol>

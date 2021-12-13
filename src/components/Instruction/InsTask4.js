@@ -253,7 +253,7 @@ const InsTask= props => {
                 <Scores display={showFish && training_clicks === 0 && randFish === 'red'? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'23%'}  >{3}</Scores> 
                 
                 {/* red example */}
-                <Scores display={showFish && training_clicks === 1 && randFish === 'red'? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'42%'}  >{2}</Scores> 
+                <Scores display={showFish && training_clicks === 1 && randFish === 'red'? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'42%'}  >{1}</Scores> 
                 <Scores display={showFish && training_clicks === 1 && randFish === 'red'? '': 'none'} background={'red'}  id="A1_Big" score_id="A1_Big"  top={'-14%'} left={'23%'}  >{3}</Scores> 
                 
 
@@ -265,7 +265,7 @@ const InsTask= props => {
                 </Agent>
 
                 <Agent position={'absolute'} left={'14%'} top={'2.5%'} width={'400px'} agent_id="FishInstruct" display={showFish && training_clicks === 1 && randFish === 'red'? '' : 'none'}>
-                    Simon is now <b>moderately confident</b> that you are on Planet RED.
+                    Simon is now <b>slightly confident</b> that you are on Planet RED.
                 </Agent>
                 <Agent position={'absolute'} left={'16%'} top={'8.5%'} width={'400px'} agent_id="FishInstruct" display={showFish && training_clicks === 1 && randFish === 'red'? '' : 'none'}>
                     Jim is still <b>highly confident</b> that you are on Planet RED.
