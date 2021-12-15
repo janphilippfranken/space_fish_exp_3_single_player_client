@@ -48,8 +48,8 @@ const InsSummary = props => {
                 1. On Planet RED, fish are mainly <b className={Classes.PlanetColorRed}>RED</b> (2/3 red; 1/3 blue). On Planet BLUE, fish are mainly <b className={Classes.PlanetColorBlue}>BLUE</b> (2/3 blue; 1/3 red).<br></br><br></br>
                 2. You and two other players are fishing at one of these planets. But to begin with none of you know which planet you are at!<br></br><br></br>
                 3. You will look at the color of whatever fish you can catch, and any judgments you might receive from the other players.<br></br><br></br>
-                {/* 4. You can’t be sure <b>if the other players can see each other's judgments</b> or if they can see your judgments.<br></br><br></br> */}
-                4. You can directly see <b>whether the other players can see each other's judgments and if they can see your own judgments</b>. You <b>should consider</b> this knowledge when updating your own judgments.<br></br><br></br>
+                4. You can’t be sure <b>if the other players can see each other's judgments</b> or if they can see your judgments.<br></br><br></br>
+                {/* 4. You can directly see <b>whether the other players can see each other's judgments and if they can see your own judgments</b>. You <b>should consider</b> this knowledge when updating your own judgments.<br></br><br></br> */}
                 5. <b>YOUR JOB</b> is to work out whether you and the other two players are catching fish on Planet RED or Planet BLUE.<br></br><br></br>
                 6. NOTE: <b>THIS IS A COLLABORATIVE GAME</b>. Other players depend on your commitment to complete the task. As such, please make sure to complete each section of the game in time and DO NOT close the window.<br></br><br></br>
                 </p>
